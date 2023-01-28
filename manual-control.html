@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" style="--bs-primary: #73150f;--bs-primary-rgb: 115,21,15;">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>StufaDomotica</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Iceland&amp;display=swap">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" href="assets/css/styles.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" 
+  integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script src="assets/js/manual-control.js"></script>
+</head>
+
+<body style="--bs-secondary: #393d40;--bs-secondary-rgb: 57,61,64;background: rgb(57,61,64);">
+  <nav class="navbar navbar-dark bg-dark py-3" style="height: 60px;">
+    <div class="container"><a class="navbar-brand d-flex align-items-center" href="#"><span
+          class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center me-2 bs-icon"
+          style="margin-top: -10px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+            fill="currentColor" viewBox="0 0 16 16" class="bi bi-thermometer-half" style="font-size: 26px;">
+            <path d="M9.5 12.5a1.5 1.5 0 1 1-2-1.415V6.5a.5.5 0 0 1 1 0v4.585a1.5 1.5 0 0 1 1 1.415z"></path>
+            <path
+              d="M5.5 2.5a2.5 2.5 0 0 1 5 0v7.55a3.5 3.5 0 1 1-5 0V2.5zM8 1a1.5 1.5 0 0 0-1.5 1.5v7.987l-.167.15a2.5 2.5 0 1 0 3.333 0l-.166-.15V2.5A1.5 1.5 0 0 0 8 1z">
+            </path>
+          </svg></span><span>Stufa</span></a><a class="align-self-center ms-auto" data-bss-hover-animate="pulse"
+        href="index.html"
+        style="text-decoration: none; text-decoration: none; width: 118px;margin-top: -5px;text-align: right;color: rgb(255,255,255);margin-right: 10px;"><span
+          class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center ms-auto me-2 bs-icon"
+          style="position: absolute;margin: -5px;"><i class="material-icons text-white"
+            style="font-size: 30px;">dashboard</i></span>Dashboard</a><button data-bs-toggle="collapse"
+        class="navbar-toggler float-end" data-bs-target="#navcol-5" style="margin-top: -15px;"><span
+          class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navcol-5"
+        style="backdrop-filter: opacity(1);-webkit-backdrop-filter: opacity(1);z-index: 1000;">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item border rounded shadow align-self-end"
+            style="color: rgb(255,255,255);background: rgba(255,255,255,0.91);min-width: 180px;margin-top: 10px;"><a
+              class="nav-link" data-bss-hover-animate="pulse" href="index.html"
+              style="width: 118px;text-align: right;color: rgb(0,0,0);margin-left: 7px;"><span
+                class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center ms-auto me-2 bs-icon"
+                style="position: absolute;margin: -5px;"><i class="material-icons text-white"
+                  style="font-size: 30px;">dashboard</i></span>Dashboard</a><a class="nav-link active"
+              data-bss-hover-animate="pulse" href="manual-control.html"
+              style="width: 104px;text-align: right;color: rgb(0,0,0);margin-left: 7px;"><span
+                class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center ms-auto me-2 bs-icon"
+                style="position: absolute;margin: -5px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em"
+                  height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                  stroke-linecap="round" stroke-linejoin="round"
+                  class="icon icon-tabler icon-tabler-manual-gearbox text-white" style="font-size: 30px;">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <circle cx="5" cy="6" r="2"></circle>
+                  <circle cx="12" cy="6" r="2"></circle>
+                  <circle cx="19" cy="6" r="2"></circle>
+                  <circle cx="5" cy="18" r="2"></circle>
+                  <circle cx="12" cy="18" r="2"></circle>
+                  <line x1="5" y1="8" x2="5" y2="16"></line>
+                  <line x1="12" y1="8" x2="12" y2="16"></line>
+                  <path d="M19 8v2a2 2 0 0 1 -2 2h-12"></path>
+                </svg></span>Manuale</a><a class="nav-link mx-auto" data-bss-hover-animate="pulse" href="settings.html"
+              style="width: 165px;text-align: right;color: rgb(0,0,0);"><span
+                class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center ms-auto me-2 bs-icon"
+                style="position: absolute;margin: -5px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em"
+                  height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                  stroke-linecap="round" stroke-linejoin="round"
+                  class="icon icon-tabler icon-tabler-settings text-white" style="font-size: 30px;">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path
+                    d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z">
+                  </path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg></span>Parametri Tecnico</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="card mx-auto" style="max-width: 800px;">
+    <div class="card-header" style="background: var(--bs-secondary);">
+      <h5 class="text-center mb-0" style="color: var(--bs-card-bg);">Controllo Manuale</h5>
+    </div>
+    <div class="card-body" style="background: var(--bs-card-border-color);">
+      <div class="container" style="max-width: 900px;margin-top: 10px;">
+        <div class="card" style="max-width: 800px;position: relative;margin-top: 10px;">
+          <div class="card-header" style="background: var(--bs-card-cap-bg);">
+            <div class="form-check form-switch mx-auto" style="max-width: 255px;">
+              <input class="form-check-input" type="checkbox" id="en-manual" onclick="funzione()"
+                style="width: 64px;height: 32px;"><label class="form-check-label"
+                for="en-manual" style="margin-left: 10px;margin-top: 7px;">Abilita Controllo Manuale</label></div>
+          </div>
+          <div class="card-body collapse hide" id="manual-control" style="background: var(--bs-card-cap-bg);">
+            <div class="row">
+              <div class="col me-auto" style="max-width: 300px;">
+                <div class="form-check form-switch mx-auto" style="max-width: 200px;">
+                  <input class="form-check-input mx-auto" type="checkbox" id="en-pellet" onclick="en_pellet()" name="check-pellet"
+                    style="width: 64px;height: 32px;"><label class="form-check-label" for="formCheck-1"
+                    style="margin-top: 7px;margin-left: 10px;">Pellete</label></div><small class="form-text mx-auto"
+                  style="position: relative;display: flex;overflow: auto;margin-top: 10px;max-width: 90px;">Abilita
+                  Coclea.</small>
+              </div>
+              <div class="col ms-auto" style="max-width: 300px;">
+                <div class="form-check form-switch mx-auto" style="max-width: 200px;"><input
+                    class="form-check-input mx-auto" type="checkbox" id="formCheck-2" name="check-legna"
+                    style="width: 64px;height: 32px;"><label class="form-check-label" for="formCheck-2"
+                    style="margin-left: 10px;margin-top: 7px;">Legna</label></div><small
+                  class="form-text text-start d-inline-flex m-auto"
+                  style="position: relative;display: none;overflow: auto;max-width: 400px;">Non gestisce la
+                  Coclea.<br>Controlli supplementari sulla temperatura dei fumi per determinare<br>lo stato della
+                  legna.</small>
+              </div>
+            </div>
+            <div class="vstack m-auto" style="max-width: 500px;">
+
+              <p style="text-align: center;font-size: 18px;font-weight: bold;">RPM Fumi</p>
+              
+              <input class="form-range" type="range" id="rpm-fumi" min="0" max="3000">
+
+              <p style="text-align: center;font-weight: bold;font-size: 18px;">Coclea</p>
+
+              <input class="form-range" type="range" id="range-pellet" min="0" max="3000" disabled>
+
+              <p style="text-align: center;font-size: 18px;font-weight: bold;">Ventilatore</p>
+
+
+              <div class="form-group mt-4 text-center">                
+                <div class="price">0</div>
+              <input class="form-range" type="range" min="0" max="100" id="customRange3">
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/script.min.js"></script>
+</body>
+
+</html>
